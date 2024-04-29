@@ -24,12 +24,13 @@ app.use("/api/faculty/details", require("./routes/Faculty Api/details.route"));
 app.use("/api/admin/details", require("./routes/Admin Api/details.route"));
 // Other Apis
 app.use("/api/timetable", require("./routes/Other Api/timetable.route"));
+app.use("/api/examtimetable", require("./routes/Other Api/timetable.route"));
 app.use("/api/material", require("./routes/Other Api/material.route"));
 app.use("/api/notice", require("./routes/Other Api/notice.route"));
 app.use("/api/subject", require("./routes/Other Api/subject.route"));
 app.use("/api/marks", require("./routes/Other Api/marks.route"));
 app.use("/api/branch", require("./routes/Other Api/branch.route"));
-
+app.use("/api/onlineclass", require("./routes/Other Api/onlineclass.route"));
 app.listen(port, () => {
   console.log(`Server Listening On http://localhost:${port}`);
 });
